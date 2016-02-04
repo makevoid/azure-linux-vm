@@ -2,9 +2,11 @@
 
 ## Spawn a Linux VM on Azure With the click of a button
 
+<!--
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+-->
 
 ### and by using your customized JSON template file!
 
