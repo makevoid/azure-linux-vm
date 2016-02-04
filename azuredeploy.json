@@ -15,7 +15,7 @@
      "value": "North Europe",
      "allowedValues": [
         "North Europe"
-      ],
+      ]
     },
     "dnsLabelPrefix": {
       "type": "string",
