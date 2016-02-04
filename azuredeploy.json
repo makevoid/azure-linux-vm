@@ -9,7 +9,10 @@
       }
     },
     "sshKeyData": {
-      "value": ""
+      "value": "GEN-SSH-PUB-KEY"
+    },
+    "location": {
+     "value": "North Europe"
     },
     "dnsLabelPrefix": {
       "type": "string",
