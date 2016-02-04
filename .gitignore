@@ -1,0 +1,2 @@
+gen/azuredeploy.json
+# git update-index --assume-unchanged gen/azuredeploy.json
