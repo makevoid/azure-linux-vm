@@ -1,6 +1,6 @@
 # Ubuntu Server 15.10 - Linux on Azure 101
 
-## Spawn a Linux VM on Azure With the click of a button
+## Spawn a Linux VM on Azure with the click of a button
 
 #### and by using your customized JSON template file!
 
