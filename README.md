@@ -31,7 +31,9 @@ Enjoy!
 --->
 
 
-This template allows you to deploy a simple Linux VM using a few different options for the Ubuntu Linux version, using the latest patched version. This will deploy in Europe a Standard_D12_v2 VM.
+This template allows you to deploy a simple Linux VM using a few different options for the Ubuntu Linux version, using the latest patched version. This will deploy in North Europe a Standard_D12_v2 VM.
+
+This template is based off the official `vm-simple-linux` template: https://github.com/Azure/azure-quickstart-templates/blob/master/101-vm-simple-linux/azuredeploy.json
 
 ### Specs and $$:
 
