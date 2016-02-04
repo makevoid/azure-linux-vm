@@ -45,7 +45,7 @@ This is the file you want to edit: <https://github.com/makevoid/azure-linux-vm/b
 ##### You can replace `<MKV>` with something like `user-123`
 ##### You can replace `<MKVID>` with something like `123`
 
-To try your script and/or test this one:
+You can try my ruby script by running `ruby azure_vm.rb`
 
 You can drop the file into the Edit Template section in the Azure Portal <https://portal.azure.com/#create/Microsoft.Template>
 And click ok ok and ok again.
