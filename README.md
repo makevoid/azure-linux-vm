@@ -1,6 +1,12 @@
 # Ubuntu Server 15.10 - Linux on Azure 101
 
-## Spawn a Linux VM on Azure by using a JSON template file
+## Spawn a Linux VM on Azure With the click of a button
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+### and by using your customized JSON template file!
 
 ### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings. 
 
@@ -8,9 +14,6 @@
 
 #### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
 
 Also to be able to use this button in your forked repo you have to: 
 
@@ -46,5 +49,10 @@ To try your script and/or test this one:
 
 You can drop the file into the Edit Template section in the Azure Portal <https://portal.azure.com/#create/Microsoft.Template>
 And click ok ok and ok again.
+
+#### Extra notes
+
+The last command of a script executes a `cp` (copy) command to copy your public key to the root user so you can directly SSH as root. You can append another command after that by using bash `;` and/or `&&` features. That way you can run multiple commands, for example download a bash script from github / gist or wherever and run it to install whatever you want. Docker maybe?
+
 
 ##### [@makevoid](https://twitter.com/makevoid)
