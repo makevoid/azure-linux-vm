@@ -24,9 +24,9 @@
 
 These buttons all point to a script in the `gen` directory, the first button points to azuredeploy.json, the other point to `azuredeploy-1.json`, `-2` and `-3.json`.  
 
-### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings.
+### This will deploy a somewhat big and somewhat VM (~40 Eurocent per hour!) with the default settings.
 
-### Also my public key is in there so I STRONGLY SUGGEST you to fork the project edit the configuration file:
+### Also my public key is in there so I STRONGLY SUGGEST you either change it or to fork the project and edit the configuration file:
 
 #### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
 
