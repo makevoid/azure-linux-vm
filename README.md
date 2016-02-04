@@ -10,14 +10,14 @@
 
 ### and by using your customized JSON template file!
 
-### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings. 
+### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings.
 
 ### Also my public key is in there so I STRONGLY SUGGEST you to fork the project edit the configuration file:
 
 #### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
 
 
-Also to be able to use this button in your forked repo you have to: 
+Also to be able to use this button in your forked repo you have to:
 
 - edit the readme.md file
 - change my username (makevoid) to `yourusername`.
@@ -44,8 +44,8 @@ This template allows you to deploy a simple Linux VM using a few different optio
 
 This is the file you want to edit: <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json
 
-##### You can replace `<MKV>` with something like `user-123`
-##### You can replace `<MKVID>` with something like `123`
+##### You can replace `<USR>` with something like `user-123`
+##### You can replace `<USRID>` with something like `123`
 
 You can try my ruby script by running `ruby azure_vm.rb`
 
