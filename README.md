@@ -2,6 +2,7 @@
 
 ## Spawn a Linux VM on Azure With the click of a button
 
+#### and by using your customized JSON template file!
 
 <table><tr><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fgen%2Fazuredeploy.json" target="_blank">
@@ -22,8 +23,6 @@
 </td></table>
 
 These buttons all point to a script in the `gen` directory, the first button points to azuredeploy.json, the other point to `azuredeploy-1.json`, `-2` and `-3.json`.  
-
-### and by using your customized JSON template file!
 
 ### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings.
 
