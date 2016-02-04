@@ -6,7 +6,9 @@ def l
   ("a".."z").to_a[rand(26)]
 end
 
-json.gsub! /<USR>/,   "mkv-#{time.hour}-#{time.min}"
+YOUR_TAG = "mkv"
+
+json.gsub! /<USR>/,   "#{YOUR_TAG}-#{time.hour}-#{time.min}"
 json.gsub! /<USRID>/, "#{l}#{l}" # #{l}#{l}#{l}#{l}#{l}
 
 File.open "./gen/azuredeploy.json", "w" do |f|
