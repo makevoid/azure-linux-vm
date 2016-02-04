@@ -28,26 +28,20 @@ These buttons all point to a script in the `gen` directory, the first button poi
 
 ### This will deploy a somewhat big and somewhat VM (~40 Eurocent per hour!) with the default settings.
 
-### Also my public key is in there so I STRONGLY SUGGEST you either change it or to fork the project and edit the configuration file:
+### Also my public key is in there so I STRONGLY SUGGEST you either change it or to fork the project and edit the configuration file yourself:
 
-#### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
+### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
 
 
-Also to be able to use this button in your forked repo you have to:
+To be able to use this button in your forked repo you have to:
 
-- edit the readme.md file
-- change my username (makevoid) to `yourusername`.
-- there's no step three!
-
+- Edit the readme.md file
+- Change my username (makevoid) to `yourusername`.
+- There's no step three! :)
 
 Enjoy!
 
-<!---
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-vm-simple-linux%2Fazuredeploy.json" target="_blank">
-    <img src="http://armviz.io/visualizebutton.png"/>
-</a>
---->
-
+#### More infos:
 
 This template allows you to deploy a simple Linux VM using a few different options for the Ubuntu Linux version, using the latest patched version. This will deploy in North Europe a Standard_D12_v2 VM.
 
