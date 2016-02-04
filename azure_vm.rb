@@ -17,7 +17,7 @@ TIMES.times do |idx|
   idx += 1
 
   json.gsub! /<USR>/,   "#{YOUR_TAG}-#{time.hour}-#{time.min}-#{idx}"
-  json.gsub! /<USRID>/, "#{l}#{l}#{l}#{l}" # #{l}#{l}#{l}#{l}#{l}
+  json.gsub! /<USRID>/, "#{l}#{l}#{l}#{l}#{l}#{l}"
 
   File.open "./gen/azuredeploy-#{idx}.json", "w" do |f|
     f.write json

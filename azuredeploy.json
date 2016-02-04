@@ -25,7 +25,7 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm<USRID>')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linux<USRID>')]",
     "location": "[resourceGroup().location]",
     "dataDisk1VhdName": "<USR>",
     "imagePublisher": "Canonical",
