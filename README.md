@@ -2,21 +2,24 @@
 
 ## Spawn a Linux VM on Azure With the click of a button
 
+
+<table><tr><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fgen%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-
+</td><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fgen%2Fazuredeploy-1.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-
+</td><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fgen%2Fazuredeploy-2.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-
+</td><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fmaster%2Fgen%2Fazuredeploy-3.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+</td></table>
 
 These buttons all point to a script in the `gen` directory, the first button points to azuredeploy.json, the other point to `azuredeploy-1.json`, `-2` and `-3.json`.  
 
