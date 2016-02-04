@@ -42,8 +42,8 @@ This template allows you to deploy a simple Linux VM using a few different optio
 
 This is the file you want to edit: <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json
 
-##### You can replace <MKV> with something like `user-123`
-##### You can replace <MKVID> with something like `123`
+##### You can replace `<MKV>` with something like `user-123`
+##### You can replace `<MKVID>` with something like `123`
 
 To try your script and/or test this one:
 
