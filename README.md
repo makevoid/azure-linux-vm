@@ -1,6 +1,10 @@
-# This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings. 
+# Ubuntu Server 15.10 - Linux on Azure 101
 
-## Also my public key is in there so I STRONGLY SUGGEST you to fork the project edit the configuration file:
+## Spawn a Linux VM on Azure by using a JSON template file
+
+### This will deploy a somewhat big and very expensive VM (~40 Euro cent per hour!) with the default settings. 
+
+### Also my public key is in there so I STRONGLY SUGGEST you to fork the project edit the configuration file:
 
 #### <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json>
 
