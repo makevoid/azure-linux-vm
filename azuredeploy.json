@@ -3,11 +3,12 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "sshKeyData": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGgkeC8d8fDaAoMavLqJZ9r5vJ+PJs51wfmQF5vfoRfOS4/CGVRdbA5KKpVmQNSQTtcGLynbQPeyqRJNo/DhxHaONIMmDBkwU4AjLUI61XE0ztKEf4iT8M5MH/bNVEZMZJ6Zsm1rWIIRVpnNd3n5kXTIwxLMY4sKBW5mgN56EfqrRlKIjBJ/MHUZ6jHd4IHq9o+1wMXp4UV1JwQXdUjrkwJLdU9/sqVB9XKK8dgrpwqkLgLlVF0TFCyu/kNc+NrfpiVd35gWUBD3kkK9su8eXVH0DGs6kQyeMA4lDa2RBZrdCxeiAD0JVIfdjrkithVHwgDMK0u2bFIR5U027Lll9n makevoid@makevoid-mbp"
     },
     "dnsLabelPrefix": {
       "type": "string",
-      "defaultValue": "mkv2",
+      "defaultValue": "<MKV>",
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
@@ -24,26 +25,26 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm<MKVID>')]",
     "location": "[resourceGroup().location]",
-    "dataDisk1VhdName": "datadisk1",
+    "dataDisk1VhdName": "<MKV>",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "OSDiskName": "osdiskforlinuxsimple",
-    "nicName": "myVMNic",
+    "OSDiskName": "os-<MKV>",
+    "nicName": "<MKV>",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
-    "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "myPublicIP",
+    "storageAccountType": "Standard_RAGRS",
+    "publicIPAddressName": "<MKV>",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "vmName": "MyUbuntuVM2",
+    "vmName": "vm-<MKV>",
     "vmSize": "Standard_D12_v2",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "vm-<MKV>",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-    "apiVersion": "2016-01-04"
+    "apiVersion": "2015-06-15"
   },
   "resources": [
     {
@@ -159,8 +160,8 @@
           },
           "dataDisks": [
             {
-              "name": "datadisk1",
-              "diskSizeGB": "100",
+              "name": "[variables('dataDisk1VhdName')]",
+              "diskSizeGB": "200",
               "lun": 0,
               "vhd": {
                 "uri": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('dataDisk1VhdName'),'.vhd')]"
@@ -210,9 +211,9 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('vmName'),'/installcustomscript')]",
+      "name": "[concat(variables('vmName'),'/installcustomscript1')]",
       "apiVersion": "[variables('apiVersion')]",
-      "location": "[parameters('location')]",
+      "location": "[variables('location')]",
       "dependsOn": [
         "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
       ],
@@ -225,7 +226,6 @@
         }
       }
     }
-
 
   ]
 }
