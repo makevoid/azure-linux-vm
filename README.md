@@ -54,15 +54,16 @@ This template is based off the official `vm-simple-linux` template: https://gith
 
 ### Things to Know
 
-This is the file you want to edit: <https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json
+This is the base file you want to edit: https://github.com/makevoid/azure-linux-vm/blob/master/azuredeploy.json
 
 ##### You can replace `<USR>` with something like `user-123`
 ##### You can replace `<USRID>` with something like `123`
 
-You can try my ruby script by running `ruby azure_vm.rb` that will regenerate
+You can try my ruby script by running `ruby azure_vm.rb` that will regenerate all the files currently presend in the `gen` directory, It's a simple script so you can tweak it or re-write it to change IDs and Names.
 
 You can drop the output file into the Edit Template section in the Azure Portal <https://portal.azure.com/#create/Microsoft.Template>
-And click ok ok and ok again.
+
+Click three times Next/Create and you will be good to go.
 
 #### Extra notes:
 
