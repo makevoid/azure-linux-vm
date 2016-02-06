@@ -26,7 +26,7 @@ All these buttons were generated via the `azuredeploy.json` template present at 
 
 These buttons all point to a script in the `gen` directory, the first button points to azuredeploy.json, the other point to `azuredeploy-1.json`, `-2` and `-3.json`.  
 
-### This will deploy a somewhat big and somewhat VM (~40 Eurocent per hour!) with the default settings.
+### This will deploy a somewhat big VM (that also costs ~40 Eurocent per hour!) with the default settings.
 
 ### Also my public key is in there so I STRONGLY SUGGEST you either change it or to fork the project and edit the configuration file yourself:
 
