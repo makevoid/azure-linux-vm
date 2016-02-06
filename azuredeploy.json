@@ -40,7 +40,7 @@
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
     "vmName": "vm-<USR>",
-    "vmSize": "Standard_D12_v2",
+    "vmSize": "Standard_D14_v2",
     "virtualNetworkName": "vm-<USR>",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",

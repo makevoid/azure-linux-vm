@@ -8,7 +8,7 @@
     },
     "dnsLabelPrefix": {
       "type": "string",
-      "defaultValue": "mkv-22-55-1",
+      "defaultValue": "mkv-22-18-1",
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
@@ -25,23 +25,23 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxpjocee')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxdymjva')]",
     "location": "[resourceGroup().location]",
-    "dataDisk1VhdName": "mkv-22-55-1",
+    "dataDisk1VhdName": "mkv-22-18-1",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "OSDiskName": "os-mkv-22-55-1",
-    "nicName": "mkv-22-55-1",
+    "OSDiskName": "os-mkv-22-18-1",
+    "nicName": "mkv-22-18-1",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_RAGRS",
-    "publicIPAddressName": "mkv-22-55-1",
+    "publicIPAddressName": "mkv-22-18-1",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "vmName": "vm-mkv-22-55-1",
-    "vmSize": "Standard_D12_v2",
-    "virtualNetworkName": "vm-mkv-22-55-1",
+    "vmName": "vm-mkv-22-18-1",
+    "vmSize": "Standard_D14_v2",
+    "virtualNetworkName": "vm-mkv-22-18-1",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
     "apiVersion": "2015-06-15"
