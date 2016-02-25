@@ -8,15 +8,15 @@ end
 
 # configuration
 
-YOUR_TAG = "mkv"
-TIMES = 3
+YOUR_TAG = "tally"
+TIMES = 5
 
 # -----------------
 
 TIMES.times do |idx|
   idx += 1
 
-  json.gsub! /<USR>/,   "#{YOUR_TAG}-#{time.hour}-#{time.min}-#{idx}"
+  json.gsub! /<USR>/,   "#{YOUR_TAG}-#{idx}"
   json.gsub! /<USRID>/, "#{l}#{l}#{l}#{l}#{l}#{l}"
 
   File.open "./gen/azuredeploy-#{idx}.json", "w" do |f|
