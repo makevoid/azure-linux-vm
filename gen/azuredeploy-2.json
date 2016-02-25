@@ -25,7 +25,7 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxbnfcyb')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxlpkoxo')]",
     "location": "[resourceGroup().location]",
     "dataDisk1VhdName": "tally-1",
     "imagePublisher": "Canonical",
@@ -40,7 +40,7 @@
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
     "vmName": "vm-tally-1",
-    "vmSize": "Standard_D14_v2",
+    "vmSize": "Standard_D12_v2",
     "virtualNetworkName": "vm-tally-1",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",

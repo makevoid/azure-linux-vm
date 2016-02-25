@@ -7,10 +7,6 @@
 All these buttons were generated via the `azuredeploy.json` template present at the root of this github project:
 
 <table><tr><td>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fdev%2Fgen%2Fazuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-</td><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fdev%2Fgen%2Fazuredeploy-1.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
@@ -20,6 +16,16 @@ All these buttons were generated via the `azuredeploy.json` template present at 
 </a>
 </td><td>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fdev%2Fgen%2Fazuredeploy-3.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+</td>
+<td>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fdev%2Fgen%2Fazuredeploy-4.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+</td>
+<td>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmakevoid%2Fazure-linux-vm%2Fdev%2Fgen%2Fazuredeploy-5.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 </td></table>
