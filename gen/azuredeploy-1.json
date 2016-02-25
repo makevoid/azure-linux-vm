@@ -25,7 +25,7 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxlpkoxo')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxzrbbgt')]",
     "location": "[resourceGroup().location]",
     "dataDisk1VhdName": "tally-1",
     "imagePublisher": "Canonical",

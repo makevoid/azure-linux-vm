@@ -1,7 +1,3 @@
-json = File.read "azuredeploy.json"
-
-time = Time.now
-
 def l
   ("a".."z").to_a[rand(26)]
 end
@@ -13,8 +9,9 @@ TIMES = 5
 
 # -----------------
 
-TIMES.times do |idx|
-  idx += 1
+TIMES.times do |t|
+  idx = t+1
+  json = File.read "azuredeploy.json"
 
   json.gsub! /<USR>/,    "#{YOUR_TAG}-#{idx}"
   json.gsub! /<USRID>/,  "#{l}#{l}#{l}#{l}#{l}#{l}"
@@ -32,12 +29,12 @@ TIMES.times do |idx|
   end
 end
 
-puts json
 
 # Usage:
 #
-# ruby azure_vm.rb            # (simple, without auto-copy)
-# ruby azure_vm.rb | pbcopy   # (osx)
-# ruby azure_vm.rb | xsel -b  # (linux)
+# ruby azure_vm.rb
 #
-# or open gen/azuredeploy.json and copy-paste it to Azure Portal
+# # then push to github
+# # and click the blue buttons! :D
+
+puts "Done!"
