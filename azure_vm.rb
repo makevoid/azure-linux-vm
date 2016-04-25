@@ -4,8 +4,8 @@ end
 
 # configuration
 
-YOUR_TAG = "tally"
-TIMES = 5
+YOUR_TAG = "tst"
+TIMES = 3
 
 # -----------------
 
@@ -15,7 +15,7 @@ TIMES.times do |t|
 
   json.gsub! /<USR>/,    "#{YOUR_TAG}-#{idx}"
   json.gsub! /<USRID>/,  "#{l}#{l}#{l}#{l}#{l}#{l}"
-  json.gsub! /<VMSIZE>/, "12" # 14
+  json.gsub! /<VMSIZE>/, "13" # 12 or 14
 
   # vm sizes
   #

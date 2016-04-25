@@ -8,7 +8,7 @@
     },
     "dnsLabelPrefix": {
       "type": "string",
-      "defaultValue": "tally-1",
+      "defaultValue": "tst-1",
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
@@ -25,23 +25,23 @@
     }
   },
   "variables": {
-    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxzrbbgt')]",
+    "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'linuxyoccyh')]",
     "location": "[resourceGroup().location]",
-    "dataDisk1VhdName": "tally-1",
+    "dataDisk1VhdName": "tst-1",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "OSDiskName": "os-tally-1",
-    "nicName": "tally-1",
+    "OSDiskName": "os-tst-1",
+    "nicName": "tst-1",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_RAGRS",
-    "publicIPAddressName": "tally-1",
+    "publicIPAddressName": "tst-1",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "vmName": "vm-tally-1",
-    "vmSize": "Standard_D12_v2",
-    "virtualNetworkName": "vm-tally-1",
+    "vmName": "vm-tst-1",
+    "vmSize": "Standard_D13_v2",
+    "virtualNetworkName": "vm-tst-1",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
     "apiVersion": "2015-06-15"
